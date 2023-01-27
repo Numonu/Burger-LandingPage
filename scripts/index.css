@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Propiedades */
+:root {
+    /*Colores*/
+    --primary-color: #f64b3c;
+    /*Propiedades*/
+    --contend-max-width: 1200px;
+}
+
+/* Simple Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    color: white;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input:focus{
+    outline: none;
+}
+
+/* General Blocks */
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--contend-max-width);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 25px;
+
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    transition: transform 0.1s linear;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/*Estilos del Main*/
+.main {
+    width: 100vw;
+    padding: 0 2rem;
+
+    background-image: url("https://images.pexels.com/photos/1556688/pexels-photo-1556688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+}
+
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    height: 39rem;
+}
+
+/*Estilos del Nav*/
+.nav {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.3rem 0;
+}
+
+.nav__logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__logo-icon {
+    font-size: 2.5rem;
+}
+
+.nav__logo-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.nav__anchor-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__anchor-box {
+    color: rgb(207, 207, 207);
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    transition: transform 0.1s linear;
+}
+
+.nav__anchor-box:hover {
+    color: white;
+    transform: scale(1.07) translateY(-3px);
+}
+
+.nav__more-btn {
+    color: inherit;
+    font-size: 2rem;
+
+    background-color: transparent;
+    border: none;
+
+    display: none;
+}
+
+/*Estilos del Hero*/
+.hero {
+    flex: 1 0 0;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.hero__title {
+    font-size: 5rem;
+}
+
+.hero__description {
+    max-width: 50%;
+    font-size: 1.2rem;
+}
+
+.hero__button {
+    width: 13.5rem;
+    padding: 0.8rem 0;
+
+    font-size: 1.2rem;
+}
+
+/*Estilos del Chefs*/
+.chefs {
+    width: 100vw;
+    color: var(--primary-color);
+
+    background: url("https://www.todofondos.net/wp-content/uploads/1680x1050-Fondo-de-Pantalla-de-Madera-Negra-1024x640.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.chefs__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.chefs__title {
+    font-size: 2.5rem;
+}
+
+.chefs__description {
+    font-size: 1.2rem;
+    text-align: center;
+
+    max-width: 60%;
+}
+
+.chefs__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+
+    margin-top: 4rem;
+    padding: 0 2rem;
+
+    text-align: center;
+}
+
+.chefs__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chefs__img-box {
+    width: 12rem;
+    height: 12rem;
+
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.658);
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.chefs__img {
+    border-radius: 50%;
+}
+
+.chefs__card-title {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.chefs__card-subtitle {
+    font-size: 1rem;
+}
+
+/*Estilos del Star*/
+.star {
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+
+.star__wrapper {
+    padding: 5rem 3rem;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.star__left-zone {
+    padding: 0 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star__img-box {
+    width: 20rem;
+    height: 20rem;
+}
+
+.star__img {
+    border-radius: 50%;
+}
+
+.star__about {
+    flex: 1 0 0;
+
+    max-width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.star__title {
+    font-size: 4rem;
+}
+
+.star__description {
+    font-size: 1.2rem;
+}
+
+.star__button {
+    width: 12rem;
+    padding: 0.7rem 0;
+
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    background-color: rgb(255, 245, 190);
+}
+
+/*Estilos del Form*/
+.form{
+    width: 100vw;
+    background-color: rgb(255, 228, 228);
+}
+.form__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    padding: 6rem 0;
+
+    color: var(--primary-color);
+}
+.form__title{
+    font-size: 3rem;
+}
+.form__description{
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 70%;
+}
+.form__input-box{
+    width: 70%;
+    height: 2.5rem;
+    margin-top: 3rem;
+
+    display: flex;
+
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+}
+.form__input{
+    flex: 3 0 0;
+
+    padding: 0 1.3rem;
+
+    font-size: 1.1rem;
+    color: rgb(78, 78, 78);
+
+    background-color: transparent;
+    border: none;
+}
+.form__button{
+    flex: 1 2 0;
+
+    padding: 0 1rem;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    font-size: 1.1rem;
+    color: white;
+}
+
+/* Estilos de Footer*/
+.footer{
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+.footer__wrapper{
+    padding: 8rem 2rem 4rem 2rem;
+}
+.footer__cards{
+    display: flex;
+    gap: 2rem;
+}
+.footer__card{
+    flex: 1 0 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+.footer__card-main{
+    flex: 2 0 0;
+}
+.footer__card-title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.footer__card-info{
+    font-size: 0.8rem;
+}
+.socials{
+    display: flex;
+    gap: 1rem;
+}
+.socials__anchor{
+    color: white;
+    font-size: 1.5rem;
+}
+.footer__anchors{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    font-size: 0.8rem;
+}
+/*Personal Footer*/
+.Jfooter{
+    width: 100vw;
+    background-color: black;
+}
+.Jfooter__wrapper{
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    padding: 20px 0;
+    border-top: 1px solid white;
+    color: white;
+}
+.Jfooter__title{
+    font-size: 1rem;
+    font-weight: normal;
+}
+.Jfooter__sub-title{
+    margin: 10px 0;
+}
+.Jfooter__social-list{
+    display: flex;
+    column-gap: 20px;
+
+    list-style: none;
+}
+.Jfooter__anchor{
+    font-size: 1.5rem;
+    color: white;
+}
+.Jfooter__inet{
+    transition: transform 0.2s;
+}
+.Jfooter__inet:hover{
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+/*Medias*/
+@media screen and (max-width : 900px) {
+    html {
+        font-size: 14px;
+    }
+
+    /*Estilos del hero*/
+    .hero {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__description {
+        max-width: 75%;
+    }
+
+    /*Estilos del Star*/
+    .star__about {
+        padding-left: 0;
+    }
+    /*Estilos del Form*/
+    .form__description{
+        max-width: 75%;
+    }
+    /*Estilos del Form*/
+    .form__input-box{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width : 750px) {
+
+    /*Estilos del nav*/
+    .nav {
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    .nav__logo-box {
+        display: none;
+    }
+
+    /*Estilos del hero*/
+    .hero {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 4rem;
+    }
+
+    .hero__description {
+        max-width: 75%;
+    }
+
+    /*Estilos del Chefs*/
+    .chefs__description {
+        max-width: 80%;
+    }
+
+    /*Estilos del Star*/
+    .star__wrapper {
+        flex-direction: column;
+    }
+
+    .star__about {
+        align-items: center;
+        max-width: none;
+
+        text-align: center;
+    }
+    /*Estilos del Form*/
+    .form__description{
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    /*Estilos del nav*/
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav__logo-box {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .nav__anchor-box {
+        display: none;
+    }
+
+    .nav__more-btn {
+        display: initial;
+    }
+
+    /*Estilos del hero*/
+    .hero__description {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width : 420px) {
+    html {
+        font-size: 10px;
+    }
+
+    /*Estilos del nav*/
+    .hero__description {
+        max-width: 95%;
+    }
+
+    /*Estilos del Chefs*/
+    .chefs__description {
+        max-width: 90%;
+    }
+    /*Estilos del Footer*/
+    .footer__card-main{
+        flex: 4 0 0;
+    }
+}
+
+@media screen and (max-width : 330px) {
+    html {
+        font-size: 8px;
+    }
+}
