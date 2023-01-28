@@ -63,7 +63,61 @@ input:focus{
     transform: scale(1.03);
     cursor: pointer;
 }
+/*Estilos del Menu Mobile*/
+.menu-mobile{
+    position: fixed;
+    transform-origin: left center;
 
+    width: 100vw;
+
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.menu-mobile__anchor-box{
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-align: center;
+
+    padding: 1rem 0;
+    border-bottom: 1px solid white;
+}
+.menu-mobile__anchor-box:active{
+    background-color: red;
+}
+.back-button{
+    margin-top: 1rem;
+
+    font-size: 4rem;
+    text-align: center;
+}
+.back-button:active{
+    color: red;
+}
+.menu-mobile--on{
+    animation-name: on;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+.menu-mobile--off{
+    animation-name: off;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+@keyframes on {
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+@keyframes off {
+    0%{
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(0);
+    }
+}
 /*Estilos del Main*/
 .main {
     width: 100vw;
@@ -128,7 +182,7 @@ input:focus{
 
 .nav__more-btn {
     color: inherit;
-    font-size: 2rem;
+    font-size: 2.5rem;
 
     background-color: transparent;
     border: none;
@@ -219,7 +273,7 @@ input:focus{
     height: 12rem;
 
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.658);
-    border: 5px solid white;
+    border: 0.3rem solid white;
     border-radius: 50%;
 }
 

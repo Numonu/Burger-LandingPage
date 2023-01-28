@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/65a19dc040.js" crossorigin="anonymous" defer></script>
+    <script src="scripts/main.js" defer></script>
     <link rel="stylesheet" href="scripts/index.css">
     <title>Burger|Landing Page</title>
 </head>
-
 <body>
+    <div class="menu-mobile menu-mobile--off" id="menu-mobile">
+        <ul class="menu-mobile__anchor-list">
+            <li class="menu-mobile__anchor-box">
+                <a href="">home</a>
+            </li>
+            <li class="menu-mobile__anchor-box">
+                <a href="">product</a>
+            </li>
+            <li class="menu-mobile__anchor-box">
+                <a href="">promo</a>
+            </li>
+            <li class="menu-mobile__anchor-box">
+                <a href="">about</a>
+            </li>
+            <li class="menu-mobile__anchor-box">
+                <a href="">contact</a>
+            </li>
+        </ul>
+        <div class="back-button" id="back-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
     <main class="main">
         <div class="main__wrapper wrapper">
             <nav class="nav">
@@ -35,7 +56,7 @@
                         <a href="">contact</a>
                     </li>
                 </ul>
-                <button class="nav__more-btn">
+                <button class="nav__more-btn" id="more-btn">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </nav>
